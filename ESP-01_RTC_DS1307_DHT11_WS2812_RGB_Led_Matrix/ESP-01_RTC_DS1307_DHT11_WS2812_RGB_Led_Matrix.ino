@@ -1,10 +1,9 @@
 // REQUIRES the following Arduino libraries:
 // - Lien vidéo: https://youtu.be/d1jamsPm1ao
+// - DHT11 DHT22 Library: https://github.com/3tawi/EspDHT
+// - DS1307ESP Library: https://github.com/3tawi/DS1307ESPTime
 // - Adafruit_NeoPixel: https://github.com/adafruit/Adafruit_NeoPixel
 // - Adafruit_GFX Library: https://github.com/adafruit/Adafruit-GFX-Library
-// - DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library
-// - Adafruit Unified Sensor Lib: https://github.com/adafruit/Adafruit_Sensor
-// - DS1307ESPTime Library: https://github.com/3tawi/DS1307ESPTime
 // - Getting Started ESP01 : https://youtu.be/QRnPRKbtEGU
 // Find All "Great Projects" Videos : https://www.youtube.com/c/GreatProjects
 
@@ -613,7 +612,6 @@ void readsource(String source) {
       }
   }
 void setup() {
- Serial.begin(115200);
   rtc.DSbegin(1, 3);
   updateTime();
   LittleFS.begin();
