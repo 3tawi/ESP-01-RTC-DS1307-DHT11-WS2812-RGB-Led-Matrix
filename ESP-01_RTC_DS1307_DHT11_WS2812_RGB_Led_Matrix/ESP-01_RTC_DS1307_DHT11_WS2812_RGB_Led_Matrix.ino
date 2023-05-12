@@ -5,7 +5,7 @@
 // - Adafruit_NeoPixel: https://github.com/adafruit/Adafruit_NeoPixel
 // - Adafruit_GFX Library: https://github.com/adafruit/Adafruit-GFX-Library
 // - Getting Started ESP01 : https://youtu.be/QRnPRKbtEGU
-// Find All "Great Projects" Videos : https://www.youtube.com/c/GreatProjects
+// - Find All "Great Projects" Videos : https://www.youtube.com/c/GreatProjects
 
 
 #include <FS.h>
