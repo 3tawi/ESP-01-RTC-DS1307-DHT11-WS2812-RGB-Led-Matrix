@@ -389,16 +389,6 @@ void handlentpTime() {
     while(!time(nullptr)){
         delay(100);
     }
-    time_t now = time(nullptr);
-    struct tm* p_tm = localtime(&now);
-     int h = p_tm->tm_hour;
-     int m = p_tm->tm_min;
-     int s = p_tm->tm_sec;
-     int dd = p_tm->tm_mday;
-     int mo = p_tm->tm_mon;
-     int yr = p_tm->tm_year;
-    rtc.setTime(s, m, h, dd, mo, yr);
-    }
 }
 void handlezoneTime() {
     handleRoot();
