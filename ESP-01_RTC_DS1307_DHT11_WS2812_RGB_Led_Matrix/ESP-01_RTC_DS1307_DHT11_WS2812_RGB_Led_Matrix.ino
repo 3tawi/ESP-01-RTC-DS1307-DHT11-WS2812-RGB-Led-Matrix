@@ -461,11 +461,6 @@ void handleSpe5() {
 void handleMesg() { 
     handleRoot();
     Message = server.arg("Message");
-    myfile = LittleFS.open("/Message.txt", "w");
-    if(myfile){ 
-      myfile.print(Message);
-    }
-    myfile.close();
     msg = 0, getmesg();
   }
 void handleWifi() { 
